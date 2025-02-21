@@ -1,4 +1,5 @@
 ---
+import Audio from '~/components/common/Audio.astro';
 import Button from '~/components/common/Button.astro';
 import Typography from '~/components/common/Typography.astro';
 import Layout from '~/layouts/Layout.astro';
@@ -7,7 +8,12 @@ import Layout from '~/layouts/Layout.astro';
 <Layout title="Transmission" subtitle='Para iniciar con el viaje dale al boton y screollea'>
   <main class="container space-y-6 flex flex-col items-center">
     <div class="flex-1">
-      <Button id="activateAudio" text="Haz click para comenzar" />
+      <!-- Botón para activar el audio -->
+    <Button id="activateAudio" text="Haz click para comenzar" />
+
+<!-- Elemento de audio -->
+<audio id="audioPlayer" src="/public/music/as_we_are.opus" preload="auto"></audio>
+
     </div>
     <div id="mensaje" class="max-w-screen-md text-center mx-auto space-y-80 md:text-4xl text-3xl relative">
       <div id="message_fragment__first" class="message__fragment">
@@ -102,32 +108,27 @@ import Layout from '~/layouts/Layout.astro';
   document.addEventListener('astro:page-load', () => {
     const firstMessage = document.getElementById('message_fragment__first') as HTMLDivElement;
     const messages = document.querySelectorAll('.message__fragment');
-    const audio = new Audio('/music/as_we_are.opus')
     const activateAudio = document.getElementById('activateAudio') as HTMLButtonElement;
-    const mensajeContainer = document.getElementById('mensaje') as HTMLDivElement;
+    const audio = document.getElementById('audioPlayer') as HTMLAudioElement;
+
 
     const playAudio = () => {
-      mensajeContainer.classList.remove('hidden')
-      mensajeContainer.classList.remove('invisible')
-      audio.muted = true
-      audio.play()
-      audio.pause()
-      activateAudio.classList.add('duration-1000')
-      activateAudio.classList.add('opacity-0')
-    }
-    activateAudio.addEventListener('click', playAudio)
 
-    gsap.to(firstMessage, {
-      scrollTrigger: {
-        trigger: firstMessage,
-        start: 'top 85%',
-        end: 'bottom 45%',
-        onEnter: () => {
-          audio.muted = false
-          audio.play()
-        },
-      }
-    })
+
+                // Desvanecer el botón
+                activateAudio.classList.add('opacity-0', 'pointer-events-none', 'duration-1000');
+
+                // Iniciar el audio después de 5 segundos
+                setTimeout(() => {
+                    audio.play();
+                }, 5000);
+            };
+
+
+
+    activateAudio.addEventListener('click', playAudio);
+
+
 
     messages.forEach((message) =>
       gsap.to(message, {

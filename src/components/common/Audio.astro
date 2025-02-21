@@ -1,0 +1,80 @@
+---
+const { src } = Astro.props;
+---
+
+<div class="w-full bg-gray-800 rounded-lg p-4">
+  <!-- Audio Element -->
+  <audio id="audio" class="hidden" src={src}></audio>
+
+  <div class="flex items-center gap-4">
+      <!-- Play Button -->
+      <button onclick="togglePlay()" id="playBtn" class="bg-transparent text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+      </button>
+
+      <div class="flex-1">
+          <!-- Progress Bar -->
+          <div class="relative h-2 bg-gray-600 rounded-full">
+              <div id="progress" class="absolute h-full w-0 bg-primary rounded-full"></div>
+          </div>
+        </div>
+
+          <!-- Time Display -->
+          <div class="flex justify-between text-sm text-gray-400 mt-1">
+            <span id="currentTime">-:--</span>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+      const audio = document.querySelector("#audio") as HTMLAudioElement;
+      const playBtn = document.querySelector("#playBtn") as HTMLButtonElement;
+      const progress = document.querySelector("#progress") as HTMLDivElement | null;
+      const currentTime = document.querySelector("#currentTime") as HTMLSpanElement;
+
+      if (!audio || !playBtn || !progress || !currentTime ) return;
+
+function togglePlay() {
+    if (audio.paused) {
+        audio.play();
+        playBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+        </svg>`;
+    } else {
+        audio.pause();
+        playBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+        </svg>`;
+    }
+}
+
+function formatTime(seconds:number) {
+    const minutes = Math.floor(seconds / 60);
+    seconds = Math.floor(seconds % 60);
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+audio.addEventListener("timeupdate", () => {
+    if (!isNaN(audio.duration)) {
+        const percent = (audio.currentTime / audio.duration) * 100;
+        progress.style.width = `${percent}%`;
+        currentTime.textContent = formatTime(audio.currentTime);
+    }
+});
+
+// Click en la barra de progreso (verifica si progress tiene un parentElement)
+const progressContainer = progress.parentElement as HTMLDivElement | null;
+      if (progressContainer) {
+          progressContainer.addEventListener("click", (e) => {
+              const rect = progressContainer.getBoundingClientRect();
+              const percent = (e.clientX - rect.left) / rect.width;
+              audio.currentTime = percent * audio.duration;
+          });
+      }
+
+playBtn.addEventListener("click", togglePlay);
+  });
+</script>
