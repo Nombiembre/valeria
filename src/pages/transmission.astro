@@ -1,22 +1,17 @@
 ---
-import Audio from '~/components/common/Audio.astro';
+export const prerender = false
 import Button from '~/components/common/Button.astro';
-import Typography from '~/components/common/Typography.astro';
 import Layout from '~/layouts/Layout.astro';
 ---
 
 <Layout title="Transmission" subtitle='Para iniciar con el viaje dale al boton y screollea'>
   <main class="container space-y-6 flex flex-col items-center">
     <div class="flex-1">
-      <!-- Botón para activar el audio -->
-    <Button id="activateAudio" text="Haz click para comenzar" />
-
-<!-- Elemento de audio -->
-<audio id="audioPlayer" src="/public/music/as_we_are.opus" preload="auto"></audio>
-
+      <Button id="activateAudio" text="Haz click para comenzar" />
+      <audio id="audioPlayer" src="/public/music/as_we_are.opus" preload="auto"></audio>
     </div>
     <div id="mensaje" class="max-w-screen-md text-center mx-auto space-y-80 md:text-4xl text-3xl relative">
-      <div id="message_fragment__first" class="message__fragment">
+      <div class="message__fragment">
         No sé cómo comenzar a escribir esto, no hay palabras que puedan describir como me siento contigo.
       </div>
       <div class="message__fragment">
@@ -103,10 +98,9 @@ import Layout from '~/layouts/Layout.astro';
 <script>
   import { gsap } from 'gsap';
   import { ScrollTrigger } from "gsap/ScrollTrigger";
-  gsap.registerPlugin(ScrollTrigger);
 
   document.addEventListener('astro:page-load', () => {
-    const firstMessage = document.getElementById('message_fragment__first') as HTMLDivElement;
+    gsap.registerPlugin(ScrollTrigger);
     const messages = document.querySelectorAll('.message__fragment');
     const activateAudio = document.getElementById('activateAudio') as HTMLButtonElement;
     const audio = document.getElementById('audioPlayer') as HTMLAudioElement;
