@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --color-primary: #F7BBBD;
+}
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  @apply text-base md:text-xl;
+}
+
+.container {
+  --max_width: 1240px;
+  --padding: 1rem;
+
+  width: min(100% - var(--padding) * 2, var(--max_width));
+  margin-inline: auto;
+}

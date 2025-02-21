@@ -1,22 +1,45 @@
+---
+import Head from '~/components/common/Head.astro';
+import Header from '~/components/common/Header.astro';
+import Typography from '~/components/common/Typography.astro';
+
+interface Props {
+  title: string;
+  titleAlt?: string;
+  subtitle?: string;
+  hideTitle?: boolean;
+}
+
+const { title, titleAlt, subtitle, hideTitle } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <Head title={title} />
+  <body class="text-white bg-black relative">
+    <div
+      class="fixed inset-0 -z-10 h-full w-full [background:radial-gradient(125%_120%_at_50%_0%,#000_40%,#18276b_100%)]"
+    >
+    </div>
+    <Header />
+    <div transition:animate="slide">
+      {!hideTitle && <Typography as='h1' variant="h1">{titleAlt ? titleAlt : title}</Typography>}
+      {subtitle && <Typography as='p' variant="subtitle">{subtitle}</Typography>}
+      <div class="py-10">
+      <slot />
+      </div>
+    </div>
+  </body>
 </html>
 
+<script>
+  import Lenis from 'lenis'
+  new Lenis({
+    autoRaf: true,
+  });
+</script>
+
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  @import "tailwindcss/theme" theme(reference);
+  @import "../styles/global.css" reference;
 </style>

@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import Typography from '~/components/common/Typography.astro';
+import Layout from '~/layouts/Layout.astro';
+
+const capsules = (await getCollection('diary')).filter(({ slug }) => !slug.startsWith('nancy'));
+---
+
+<Layout title="Capsules of Echoes">
+  <main class="container">
+    <div class="flex flex-wrap gap-4 flex-col md:flex-row">
+      {
+        capsules.map(({slug, data}) => {
+
+          const transitionName = `post-img-${slug}`;
+
+          return (
+          <a class="max-w-xs border rounded-xl border-slate-600 overflow-hidden block cursor-pointer" href={`/journal/${slug}`}>
+            <div class="aspect-video">
+              <img transition:name={transitionName} src={data.heroImage} alt="heroImage" class="w-full h-full object-cover rounded-lg " />
+            </div>
+            <div class="py-3">
+              <Typography as="h2" variant="h3">
+                {data.title}
+              </Typography>
+            </div>
+          </a>
+        )})
+      }
+    </div>
+  </main>
+</Layout>
