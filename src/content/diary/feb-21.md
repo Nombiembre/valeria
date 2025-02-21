@@ -11,3 +11,5 @@ heroImage: /diary_images/febrero21.avif
 7:16 ya te llegó el mensaje u.u
 
 7:38 ya respondiste :3, lo malo es que estás mal :(, ya te lo escribí por Whatsapp pero lo voy a repetir, no se por lo que estás pasando pero quisiera ayudarte, quisiera ser tu apoyo, quisiera hacer que no te sientas mal :(
+
+15:51 Pues, lo que quiero escribir no se si ponerlo aqui o hacer una nueva transmission, creo que lo hare en otra transmission, pero no quiero hacer muchas porque se pierde lo especial jdksdj, te extraño mucho, estaba en duda si enviarte mensajes o no, pero si lo seguire haciendo, tengo miedo de que llegue a ser abrumador asi que avisame, si?, voy a seguir estando atento contigo lov uuuuuuu
