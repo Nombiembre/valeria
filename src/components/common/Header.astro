@@ -2,13 +2,13 @@
 import { NAVIGATION } from '~/utils/navigation';
 ---
 
-<header class="mt-5 mb-7 md:mb-10">
-  <nav class="bg-zinc-800 rounded-full overflow-hidden max-w-fit mx-auto">
-    <ul class="flex items-center ">
+<header class="mt-5 mb-7 md:mb-10 container">
+  <nav class="bg-zinc-800 rounded-xl md:rounded-full overflow-hidden max-w-fit mx-auto">
+    <ul class="flex items-center flex-wrap justify-center ">
       {
         NAVIGATION.map(({ name, href }) => (
           <li>
-            <a href={href} class="transition-all block text-center hover:text-black md:text-base text-[13px] hover:bg-primary md:px-4 py-1 px-2 rounded-full">
+            <a href={href} class="transition-all block text-center hover:text-black md:text-base text-[13px] hover:bg-primary focus-visible:bg-primary focus-visible:text-black md:px-4 py-1 px-2 rounded-full">
               {name}
             </a>
           </li>
