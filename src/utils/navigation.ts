@@ -11,5 +11,13 @@ export const NAVIGATION = [
   {
     name: 'Signal Home',
     href: '/signal',
+  },
+  {
+    name: 'Daily Log',
+    href: '/daily-log'
+  },
+  {
+    name: 'The Observatory',
+    href: '/observatory'
   }
 ];

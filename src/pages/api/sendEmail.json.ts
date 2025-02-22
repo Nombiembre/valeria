@@ -39,6 +39,7 @@ export const POST: APIRoute = async ({ request }) => {
   });
 
   if (send.data) {
+    console.log("Mail send")
     return new Response(
       JSON.stringify({
         message: send.data,
@@ -49,6 +50,7 @@ export const POST: APIRoute = async ({ request }) => {
       }
     );
   } else {
+    console.log("Mail not send")
     return new Response(
       JSON.stringify({
         message: send.error,
