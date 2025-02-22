@@ -8,4 +8,12 @@ const diary = defineCollection({
   }),
 });
 
-export const collections = { diary };
+const observatory = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    heroImage: z.string(),
+  }),
+});
+
+export const collections = { diary, observatory };
