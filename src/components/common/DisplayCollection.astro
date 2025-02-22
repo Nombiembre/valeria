@@ -1,0 +1,34 @@
+---
+import ImagePlaceholder from './ImagePlaceholder.astro';
+import Typography from './Typography.astro';
+
+interface Props {
+  collection: any[];
+  name: string;
+}
+
+const { collection, name } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-4 flex-col md:flex-row">
+  {
+    collection.map(({slug, data}) => {
+
+      const transitionName = `post-img-${slug}`;
+      console.log("🚀 ~ file: DisplayCollection.astro:18 ~ data.heroImage:", data.heroImage)
+      return (
+      <a class="md:max-w-xs border rounded-xl border-slate-600 overflow-hidden block cursor-pointer" href={`/${name}/${slug}`}>
+        <div class="aspect-video min-w-xs">
+          {
+            data.heroImage === undefined ?  <ImagePlaceholder /> : <img transition:name={transitionName} src={data.heroImage} alt="heroImage" class="w-full h-full object-cover rounded-lg " />
+          }
+        </div>
+        <div class="py-3">
+          <Typography as="h2" variant="h3">
+            {data.title}
+          </Typography>
+        </div>
+      </a>
+    )})
+  }
+</div>
