@@ -10,6 +10,6 @@ heroImage: /diary_images/febrero22.avif
 
 12:33 Aun no he avanzado en el tema o la transmission 😭😭, estuve viendo varias cosas, bueno predicas JDKSAJ, quiero hacer las cosas bien contigo, tengo que hacer el almuerzo pero me quede viendo las predicas JDKLAS, hay muchas cosas que quiero decir ahora pero, lo hare en la transmission
 
-3:58 Despues de ya sabes no creo que vaya a terminar ni el tema ni la transmission hoy, lo siento.
+15:58 Despues de ya sabes no creo que vaya a terminar ni el tema ni la transmission hoy, lo siento.
 
 Hoy hace 4 meses comenzamos a hablar, hace 4 meses nos conocimos, hace 4 meses inciaron los 4 meses mas locos de mi vida, los mejores; te conoci, has sido lo mejor que me has sucedido, y los peores; llevaba tiempo pensando en terminar con todo y casi lo hago, casi lo hago si no hubiera sido por ti, 22 de octubre y 7 de noviembre son fechas que jamas voy a olvidar, este apenas es el comienzo, apenas van 4 meses pero seran años. te amo demasiado, aunque no estes enamorada de mi te voy a seguir amando, voy a seguir con la esperanza de que te voy a ayudar a superar el trauma que tienes, y despues de eso vamos a poder estar juntos toda la vida
