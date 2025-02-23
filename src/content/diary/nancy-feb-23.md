@@ -1,6 +1,7 @@
 ---
 title: "23 de febrero"
 date: 2025-02-23
+heroImage: /diary_images/febrero23.avif
 ---
 
 1:40 am, no se hace cuánto estoy despierto, ya que me desperté pero intenté dormir, pero vi que no puedo así que por eso estoy escribiendo, genial, no puedo dejar de pensar en lo de ayer :(, no puedo dejar de pensar en la muerte :(, quiero dejar de sufrir, quiero morir, no aguanto más, ya mi mente está comenzando a aceptar que no podré estar con ella, que nunca le voy a gustar, que nunca se va a enamorar de mi, quiero morir ya, porfavor Dios, mátame
