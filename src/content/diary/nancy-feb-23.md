@@ -21,3 +21,7 @@ Las amo a las dos, con todo mi corazón y alma, gracias por haber sido lo único
 3:39 I can't sleep :(
 
 7:27 Al final puse música y creo que me dormí a las 4 y algo. Después del audio que me envió ayer y el que puse, no me ha vuelto a escribir :(, no creo que la pueda enamorar de mi, sueño con verla frente al altar, ver su cara en ese vestido a punto de convertirnos marido y mujer, pero no va a pasar, otro va a vivir ese sueño con ella.
+
+13:02 No puedo dejar de pensar en ella, ni en suicidarme, deseo las dos cosas, ahora estoy hablando con ella por whats, y, le estoy diciendo que nunca me voy a rendir, que la voy a ayudar a superar sus traumas, que la voy a superar y que vamos a estar juntos toda la vida, pero estoy destrozado, no puedo dejar de llorar, la realidad es que estoy mas convencido de que nunca voy a poder estar con ella, es imposible que logre estar con ella, pero es ella o nada, podria suicidarme ahora, pero creo que vale la pena intentar, si no lo logro, bueno, de todas formas era una batalla perdida, pero al menos lo intente,
+
+13:42 Ya falta "poco" para que se acabe el dia, solo tengo que aguantar un poco mas, un poco mas y mañana podre verte
