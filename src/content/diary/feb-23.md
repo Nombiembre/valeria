@@ -23,3 +23,5 @@ Si vas ganando un partido 3-0 en los primeros 20 minutos, el resto del partido s
 - Voy a conquistar tu corazón
 - Voy a hacer que te sientas tan bien conmigo que no quieras buscar a otra persona para pasar el rato
 - Voy a hacer que sientas atraccion por mi, no podras alejarte
+
+16:37 Ver tu cara es indescriptible, me da esperanza, me da fuerza para seguir, gracias por enviarme esa foto :3, ver tu cara me hace demasiado feliz, nunca me voy a rendir, voy a hacer todo lo que pueda para ver esa cara todos los dias al despertar

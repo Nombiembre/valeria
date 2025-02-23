@@ -5,6 +5,8 @@ heroImage: /images/whatislove.avif
 ---
 
 <div class="hidden">
+  
+
   Amor no es recibir, si no dar, entre mas damos amor, menos amor demandamos
 
   Amor no es lo que hacemos, si no lo que somos
