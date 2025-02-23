@@ -17,3 +17,7 @@ Solo estoy esperando el día en el que ella me abandoné y me deje de hablar, so
 Gracias por haber estado todos estos años conmigo, quisiera que fueran más, quisiera que estuvieras en mi graduación, quisiera que estuvieras en mi boda con ella, quisiera verte envejecer y ver tu cara de anciana y burlarme de ti, pero nada de eso va a pasar, solo serán recuerdos que jamás existieron, al igual que todos los recuerdos que tuve con ella, de cómo vivíamos juntos, de cómo nos abrazamos, de cómo teniamos una familia... Solo serán recuerdos que jamás existieron, recuerdos que alguien más tendra y va a vivir con ella, recuerdos que tú vivirás con otras personas, estarás en la graduación de otras personas, estarás en la boda de muchas personas, pero yo no voy a poder vivir esos recuerdos, dicen que antes de morir ves toda tu vida pasar ante ti, yo voy a ver esa vida que no pude tener con ella, ni contigo, solo podré ver todos esos recuerdos imaginarios antes de morir
 
 Las amo a las dos, con todo mi corazón y alma, gracias por haber sido lo único bueno en mi vida, nunca las dejaré de amar, las voy a amar incluso muerto.
+
+3:39 I can't sleep :(
+
+7:27 Al final puse música y creo que me dormí a las 4 y algo. Después del audio que me envió ayer y el que puse, no me ha vuelto a escribir :(, no creo que la pueda enamorar de mi, sueño con verla frente al altar, ver su cara en ese vestido a punto de convertirnos marido y mujer, pero no va a pasar, otro va a vivir ese sueño con ella.

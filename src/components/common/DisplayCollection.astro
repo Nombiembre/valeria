@@ -15,7 +15,6 @@ const { collection, name } = Astro.props;
     collection.map(({slug, data}) => {
 
       const transitionName = `post-img-${slug}`;
-      console.log("🚀 ~ file: DisplayCollection.astro:18 ~ data.heroImage:", data.heroImage)
       return (
       <a class="md:max-w-xs border rounded-xl border-slate-600 overflow-hidden block cursor-pointer" href={`/${name}/${slug}`}>
         <div class="aspect-video min-w-xs">
